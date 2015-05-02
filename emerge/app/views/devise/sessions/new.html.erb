@@ -1,9 +1,29 @@
+<<<<<<< HEAD
 
 <center>
 <div class="container">
 <form class="form-signin">
 <h2 class="form-signin-heading">Sign In</h2>
+=======
+<h2>Log in</h2>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '403864946464795',
+            xfbml      : true,
+            version    : 'v2.3'
+        });
+    };
+>>>>>>> origin/master
 
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
  <form class="form-signin">
@@ -35,6 +55,16 @@
 
 
 <%= render "devise/shared/links" %>
+<<<<<<< HEAD
 </form>
 </div>
 </center>
+=======
+<br>
+<div
+class="fb-like"
+data-share="true"
+data-width="450"
+data-show-faces="true">
+</div>
+>>>>>>> origin/master
