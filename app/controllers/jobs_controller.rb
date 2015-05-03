@@ -5,10 +5,13 @@ class JobsController < ApplicationController
   def show
 
   end
-  def create
-    job_data = params.require(:job).permit(:name, :description, :picture_url)
-    @job = Job.new job_data
-    @job.save
-    redirect_to jobs_show_path
+  def index
+    @job = Job.all
+
   end
-end
+  def create
+
+    redirect_to job_path
+
+  end
+  end

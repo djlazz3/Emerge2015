@@ -9,6 +9,7 @@
 <form>
 
 <%= form_for(@job) do |f| %>
+<<<<<<< HEAD
 
     <%= f.text_field :name, placeholder: "Job Name", class: "form-control" %>
 	<br>
@@ -25,4 +26,10 @@
 	</div>
 	</div>
 
+=======
+    <%= f.text_field :name, placeholder: "Job Name" %>
+    <%= f.text_area :description, placeholder: "Desctiption of your app" %>
+    <%= f.text_field :picture_url, placeholder: "Url of image, leave blank for random" %>
+    <button class="btn btn-info"><a href="/jobs">Create New Job</a></button>
+>>>>>>> 224823412ff35657b3f001feb57ea6a08588f33e
 <% end %>

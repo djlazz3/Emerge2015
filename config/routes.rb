@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   get 'user/show'
-
   get 'gettingstarted/index'
-  get 'jobs/new'
-  get 'jobs/show'
+  get 'jobs/index'
   post 'jobs/create', as: "jobs"
+  resources 'jobs'
   devise_for :users
 
 
