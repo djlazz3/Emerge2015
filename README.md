@@ -7,19 +7,19 @@
 # Three Tech Stooges are:
 <ol>
 <li>
-Bryan Padron Bpadron2000@gmail.com
+<a href="http://steamcommunity.com/id/xXx_swagmasteryolo420blazeit_xXx">Bryan Padron</a> Bpadron2000@gmail.com
 </li>
 <li>
-Lazaro Osuna Sircraftsalot111@gmail.com
+<a href="http://steamcommunity.com/id/sircraftsalot111">Lazaro Osuna</a> Sircraftsalot111@gmail.com
 </li>
 <li>
-Victor Cedeño Mpblueson@gmail.com
+<a href="http://steamcommunity.com/id/9964640">Victor Cedeño</a> Mpblueson@gmail.com
 </li>
 <li>
-Vera Gilford Veragilford@yahoo.com
+<a href="twitter.com/veraegilford">Vera Gilford</a> Veragilford@yahoo.com
 </li>
 <li>
-Aymee Pozo Apozo2000@gmail.com
+<a href="https://www.facebook.com/aymee.pozo">Aymee Pozo</a> Apozo2000@gmail.com
 </li>
 </ol>
 <br>
