@@ -1,4 +1,4 @@
-<%= form_for(@job) do |f| %>
+<%= form_for(@job, url: job_path) do |f| %>
     <%= f.text_field :name, placeholder: "Job Name" %>
     <%= f.text_area :description, placeholder: "Desctiption of your app" %>
     <%= f.text_field :picture_url, placeholder: "Url of image, leave blank for random" %>

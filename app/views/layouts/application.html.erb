@@ -105,7 +105,7 @@ body {
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
 	          <li><a href="/jobs/new">Employ</a></li>
-	          <li><a href="/jobs/show">Work</a></li>
+	          <li><a href="/jobs/">Work</a></li>
 	        </ul>
 	      </li>
        </ul>
@@ -186,7 +186,7 @@ body {
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '{your-app-id}',
+            appId      : '403864946464795',
             cookie     : true,  // enable cookies to allow the server to access
                                 // the session
             xfbml      : true,  // parse social plugins on this page
@@ -234,6 +234,8 @@ body {
 <br>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
 <%= yield %>
 
 </body>
