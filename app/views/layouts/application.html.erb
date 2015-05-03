@@ -42,7 +42,9 @@ body {
   padding: 10px;
   font-size: 16px;
 }
-
+.form-signin .form-control:focus {
+  z-index: 2;
+}
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
@@ -53,6 +55,7 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 
   
             .navbar-inverse { background-color: #40BEC7}
@@ -101,20 +104,18 @@ body {
 				<li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
-	          <li><a href="#">Employ</a></li>
-	          <li><a href="#">Work</a></li>
+	          <li><a href="/jobs/employ">Employ</a></li>
+	          <li><a href="/jobs/work">Work</a></li>
 	        </ul>
 	      </li>
-        <li>
-          <a href="#">***</a>
-        </li>
-        <li>
-          <a href="#">***a</a>
-        </li>
-      </ul>
+       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-        
-		 <li><a><%= current_user %></a></li>
+        <% if user_signed_in?%>
+            <li><a href="/user/show"><%= current_user.email %></a></li>
+        <% else %>
+            <li><a href="/users/sign_in">Not Currently Logged In</a></li>
+        <% end %>
+
         <li><a href="/users/sign_in" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Login</a></li>
          <li><a href="/users/sign_up" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Register</a></li>
 		 
@@ -230,6 +231,7 @@ body {
         });
     }
 </script>
+<br>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <%= yield %>

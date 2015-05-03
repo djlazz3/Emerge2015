@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'gettingstarted/index'
+  get 'user/show'
 
+  get 'gettingstarted/index'
+  get 'jobs/employ'
+  get 'jobs/work'
   devise_for :users
 
 
