@@ -116,10 +116,10 @@ body {
         </li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-        <% if user_logged_in?%>
-            <li><a href=""><%= current_user.email %></a></li>
+        <% if user_signed_in?%>
+            <li><a href="/user/show"><%= current_user.email %></a></li>
         <% else %>
-            <li><a href="">Not Currently Logged In</a></li>
+            <li><a href="/users/sign_in">Not Currently Logged In</a></li>
         <% end %>
 
         <li><a href="/users/sign_in" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Login</a></li>
@@ -237,6 +237,7 @@ body {
         });
     }
 </script>
+<br>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <%= yield %>
