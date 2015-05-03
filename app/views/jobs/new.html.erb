@@ -1,0 +1,6 @@
+<%= form_for(@job) do |f| %>
+    <%= f.text_field :name, placeholder: "Job Name" %>
+    <%= f.text_area :description, placeholder: "Desctiption of your app" %>
+    <%= f.text_field :picture_url, placeholder: "Url of image, leave blank for random" %>
+    <%= f.submit "Create New Job",class: "btn btn-info" %>
+<% end %>
