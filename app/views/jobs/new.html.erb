@@ -1,6 +1,28 @@
+ <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+<div class="form-signin">
+<h3>Employ A Student</h3>
+<br>
+
+<div class="col-md-6">
+<div class="widget-area no-padding blank">
+<div class="status-upload">
+<form>
+
 <%= form_for(@job) do |f| %>
-    <%= f.text_field :name, placeholder: "Job Name" %>
-    <%= f.text_area :description, placeholder: "Desctiption of your app" %>
-    <%= f.text_field :picture_url, placeholder: "Url of image, leave blank for random" %>
+
+    <%= f.text_field :name, placeholder: "Job Name", class: "form-control" %>
+	<br>
+	<br>
+    <%= f.text_area :description, placeholder: "Desctiption of your app", class: "form-control" %>
+	<br>
+	<br>
+    <%= f.text_field :picture_url, placeholder: "Image Url", class: "form-control" %>
+	<br>
+	<br>
     <%= f.submit "Create New Job",class: "btn btn-info" %>
+	</div>
+	</div>
+	</div>
+	</div>
+
 <% end %>
