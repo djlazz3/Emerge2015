@@ -101,8 +101,8 @@ body {
 				<li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jobs <b class="caret"></b></a>
 	        <ul class="dropdown-menu">
-	          <li><a href="#">Employ</a></li>
-	          <li><a href="#">Work</a></li>
+	          <li><a href="/jobs/employ">Employ</a></li>
+	          <li><a href="/jobs/work">Work</a></li>
 	        </ul>
 	      </li>
         <li>
@@ -113,8 +113,12 @@ body {
         </li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-        
-		 <li><a><%= current_user %></a></li>
+        <% if user_logged_in?%>
+            <li><a href=""><%= current_user.email %></a></li>
+        <% else %>
+            <li><a href="">Not Currently Logged In</a></li>
+        <% end %>
+
         <li><a href="/users/sign_in" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Login</a></li>
          <li><a href="/users/sign_up" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Register</a></li>
 		 
