@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="495634856">
+    <data-source source="LOCAL" name="Rails emerge: production" uuid="9cc47859-ed77-4204-8c62-efcf3d97e182">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:emerge_production</jdbc-url>
+      <user-name>emerge</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfefdfe7dfefdff8dfeddfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
